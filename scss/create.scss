@@ -1,0 +1,115 @@
+.create{
+height: 1967px;
+
+.formHolder {
+  width: 980px;
+  padding-top: 180px;
+  margin: 0 auto;
+
+  h3{
+    font-size: 25px;
+    font-family: caveat_bold;
+    color: black;
+  }
+
+
+  input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding-left: 5px;
+    font-family: lato_light;
+    font-size: 20px;
+    color: #000;
+  }
+
+  .formTop {
+    position: relative;
+    margin-bottom: 125px;
+
+    input{
+        margin-top: 80px;
+    }
+
+    .imageBtn {
+      position: absolute;
+      right: 0;
+      top: 13px;
+      cursor: pointer;
+      width: 100px;
+      height: 30px;
+      background-color: #EFA7A7;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 40px;
+    }
+  }
+
+  .formDesc,
+  .formInstr {
+    margin-top: 125px;
+    position: relative;
+
+    input{
+        margin-bottom: 60px;
+    }
+
+    h5{
+        font-family: lato_black;
+        font-size: 20px;
+    }
+  }
+
+  .formDesc .descAddBtn {
+    position: absolute; 
+    width: 38px; 
+    height: 38px;  
+    background-color: #EFA7A7;
+    color: #fff;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    border-radius: 50%; 
+    bottom: 5px; 
+    right: 0;
+    cursor: pointer;
+  }
+
+  .formInstr .instrAddBtn {
+    position: absolute; 
+    width: 38px;
+    height: 38px;  
+    background-color: #EFA7A7;
+    color: #fff; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 50%; 
+    bottom: 5px; 
+    right: 0;
+    cursor: pointer;
+  }
+
+  .btn {
+    width: 422px; 
+    height: 50px; 
+    background-color: #EFA7A7;
+    color: #000;  
+    margin: 0 auto; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: caveat;
+    margin-bottom: 100px;
+  }
+
+}
+}

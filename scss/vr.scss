@@ -1,0 +1,106 @@
+
+.vr {
+    width: 820px;
+    min-height: 200px;
+    height: 1200px;
+    margin-top: 170px;
+    margin-left: 135px;
+
+    .sideways{
+        margin-top: 150px;
+
+        h2{
+            writing-mode: vertical-rl;
+            text-orientation: sideways;
+            font-size: 25px;
+            font-family: lato_black;
+
+
+        }
+    }
+
+
+    .recipeHolder {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      
+      .recipe {
+        width: 1100px;
+        min-height: 200px;
+        margin-bottom: 58px;
+        display: flex;
+
+        .titleDesc{
+            margin-left: 45px;
+
+            h3{
+                font-size: 25px;
+                font-family: lato_black;
+                margin-bottom: 35px;
+
+            }
+        p{
+            width: 405px;
+            font-size: 20px;
+            font-family: caveat;
+            margin-bottom: 35px;
+
+
+        }
+    }
+
+        .imageHolder {
+            width: 468px;
+            height: 420px;
+            overflow: hidden;
+            margin-bottom: 20px;
+
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+          }
+      }
+
+
+      .ingre{
+        margin-left: 25px;
+        margin-bottom: 60px;
+
+        h1{
+            font-size: 25px;
+            font-family: lato_black;
+            margin-bottom: 35px;
+
+        }
+
+        p{
+            margin-bottom: -3px;
+            font-size: 20px;
+            font-family: caveat;
+
+        }
+      }
+      
+      .edit{
+        margin-left: 25px;
+        width: 127px;
+
+        a{
+            text-decoration: none;
+            padding: 10px;
+            background-color: #FFD972;
+            color: black;
+            border-radius: 20px;
+        }
+      }
+      
+
+
+  }

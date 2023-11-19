@@ -1,0 +1,740 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+#app {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-holder {
+  width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  position: absolute;
+  top: 0;
+  margin-left: 100px;
+}
+.nav-holder .logo {
+  margin-top: 16px;
+  margin-left: 50px;
+}
+.nav-holder a {
+  text-decoration: none;
+  color: Black;
+  font-size: 25px;
+  font-family: caveat;
+  padding: 10px;
+}
+.nav-holder ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 50px;
+}
+.nav-holder ul li {
+  margin-left: 10px;
+  padding: 5px;
+  transition: 0.3s;
+}
+.nav-holder .login {
+  width: 100px;
+  border-radius: 50px;
+  background-color: #ffd972;
+  border: black solid 0.5px;
+  text-align: center;
+}
+.nav-holder .hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+.nav-holder .hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.nav-holder .open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.nav-holder .open .bar2 {
+  opacity: 0;
+}
+.nav-holder .open .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+.nav-holder .open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-holder .mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+.nav-holder .mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media all and (max-width: 900px) {
+  nav {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+  }
+}
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.6)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.home .content {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.home .content .box {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.home .content .circle1 {
+  width: 357.58px;
+  height: 357.58px;
+  background-color: #FFD972;
+  border-radius: 50%;
+  z-index: 99;
+  text-align: center;
+}
+.home .content .circle1 h1 {
+  font-size: 24px;
+  font-family: caveat_bold;
+  margin-top: 100px;
+}
+.home .content .circle1 p {
+  width: 160px;
+  font-family: Lato;
+  font-size: 13px;
+  margin-left: 95px;
+  margin-top: 30px;
+}
+.home .content .circle2 {
+  width: 167.88px;
+  height: 167.88px;
+  background-color: #FCBCB8;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  display: flex;
+  align-items: center;
+}
+.home .content .circle2 p {
+  width: 105px;
+  font-family: lato_italic;
+  font-size: 10px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+@font-face {
+  font-family: caveat_bold;
+  src: url(/fonts/Caveat-Bold.ttf);
+}
+@font-face {
+  font-family: caveat;
+  src: url(/fonts/Caveat-Regular.ttf);
+}
+@font-face {
+  font-family: gill_light;
+  src: url(/fonts/GillSans-Light.ttf);
+}
+@font-face {
+  font-family: gillsans;
+  src: url(/fonts/GillSans.ttf);
+}
+@font-face {
+  font-family: lato_italic;
+  src: url(/fonts/Lato-Italic.ttf);
+}
+@font-face {
+  font-family: Lato;
+  src: url(/fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: lato_black;
+  src: url(/fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: lato_italic;
+  src: url(/fonts/Lato-Italic.ttf);
+}
+@font-face {
+  font-family: lato_light;
+  src: url(/fonts/Lato-Light.ttf);
+}
+.login-screen {
+  min-height: 100vh;
+  background-color: #FFD972;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-screen .wrapper {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-screen .wrapper .createsigninwrapper {
+  width: 800px;
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.login-screen .wrapper .createact {
+  padding: 30px;
+  width: 50%;
+  height: 100%;
+  margin-left: 100px;
+}
+.login-screen .wrapper .createact input {
+  width: 250px;
+}
+.login-screen .wrapper .createact h1 {
+  margin-bottom: 60px;
+  font-family: lato_black;
+  font-size: 30px;
+}
+.login-screen .wrapper .createact p {
+  font-size: 12px;
+  font-family: lato_italic;
+  margin-bottom: -1px;
+}
+.login-screen .wrapper .createact #createBtn {
+  border-radius: 50px;
+  background-color: #FFD972;
+  border: black solid 0.1px;
+  text-align: center;
+  width: 250px;
+  height: 52px;
+  color: black;
+  font-size: 25px;
+  font-family: caveat;
+}
+.login-screen .wrapper .signin {
+  margin-top: 220px;
+  padding: 30px;
+  width: 50%;
+  height: 100%;
+}
+.login-screen .wrapper .signin input {
+  width: 206px;
+}
+.login-screen .wrapper .signin h1 {
+  margin-bottom: 60px;
+  font-family: lato_black;
+  font-size: 30px;
+}
+.login-screen .wrapper .signin #signin {
+  border-radius: 50px;
+  background-color: #FFD972;
+  border: black solid 0.1px;
+  text-align: center;
+  width: 209px;
+  height: 52px;
+  color: black;
+  font-size: 25px;
+  font-family: caveat;
+}
+.login-screen .wrapper input, .login-screen .wrapper label {
+  display: block;
+}
+.login-screen .wrapper input {
+  margin-bottom: 50px;
+  border: none;
+  border-bottom: 3px solid black;
+  background-color: #FFD972;
+}
+
+.create {
+  height: 1967px;
+}
+.create .formHolder {
+  width: 980px;
+  padding-top: 180px;
+  margin: 0 auto;
+}
+.create .formHolder h3 {
+  font-size: 25px;
+  font-family: caveat_bold;
+  color: black;
+}
+.create .formHolder input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid #000;
+  padding-left: 5px;
+  font-family: lato_light;
+  font-size: 20px;
+  color: #000;
+}
+.create .formHolder .formTop {
+  position: relative;
+  margin-bottom: 125px;
+}
+.create .formHolder .formTop input {
+  margin-top: 80px;
+}
+.create .formHolder .formTop .imageBtn {
+  position: absolute;
+  right: 0;
+  top: 13px;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  background-color: #EFA7A7;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+.create .formHolder .formDesc,
+.create .formHolder .formInstr {
+  margin-top: 125px;
+  position: relative;
+}
+.create .formHolder .formDesc input,
+.create .formHolder .formInstr input {
+  margin-bottom: 60px;
+}
+.create .formHolder .formDesc h5,
+.create .formHolder .formInstr h5 {
+  font-family: lato_black;
+  font-size: 20px;
+}
+.create .formHolder .formDesc .descAddBtn {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  background-color: #EFA7A7;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  bottom: 5px;
+  right: 0;
+  cursor: pointer;
+}
+.create .formHolder .formInstr .instrAddBtn {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  background-color: #EFA7A7;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  bottom: 5px;
+  right: 0;
+  cursor: pointer;
+}
+.create .formHolder .btn {
+  width: 422px;
+  height: 50px;
+  background-color: #EFA7A7;
+  color: #000;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: caveat;
+  margin-bottom: 100px;
+}
+
+.browse {
+  height: 1000px;
+  background-image: linear-gradient(rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../images/recipe-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+.browse .words {
+  position: relative;
+  top: 18%;
+  left: 11%;
+  width: 300px;
+}
+.browse .words h2 {
+  font-size: 25px;
+  font-family: caveat_bold;
+}
+.browse .wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  height: 575px;
+  display: flex;
+}
+.browse .browseHolder {
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.browse .food {
+  width: 600px;
+  min-height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.browse .food .imageHolder {
+  width: 300px;
+  height: 263px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.browse .food .imageHolder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.browse .titleDesc {
+  width: 225px;
+  height: 263px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: -1px;
+}
+.browse .titleDesc .time {
+  width: 85px;
+  height: 25px;
+  margin-left: 70px;
+  margin-bottom: 16px;
+}
+.browse .titleDesc .time p {
+  font-size: 10px;
+  font-family: Lato;
+  margin-top: -22px;
+}
+.browse .titleDesc .time img {
+  width: 23px;
+  height: 25px;
+}
+.browse .titleDesc h4 {
+  margin-top: 40px;
+  font-size: 15px;
+  font-family: lato_black;
+  border-bottom: solid black 2px;
+  width: 130px;
+  margin-left: 47px;
+}
+.browse .titleDesc p {
+  width: 145px;
+  font-size: 10px;
+  font-family: Lato;
+  margin-left: 47px;
+}
+.browse ol,
+.browse ul {
+  margin-left: 20px;
+}
+
+.vr {
+  width: 820px;
+  min-height: 200px;
+  height: 1200px;
+  margin-top: 170px;
+  margin-left: 135px;
+}
+.vr .sideways {
+  margin-top: 150px;
+}
+.vr .sideways h2 {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  font-size: 25px;
+  font-family: lato_black;
+}
+.vr .recipeHolder {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.vr .recipe {
+  width: 1100px;
+  min-height: 200px;
+  margin-bottom: 58px;
+  display: flex;
+}
+.vr .recipe .titleDesc {
+  margin-left: 45px;
+}
+.vr .recipe .titleDesc h3 {
+  font-size: 25px;
+  font-family: lato_black;
+  margin-bottom: 35px;
+}
+.vr .recipe .titleDesc p {
+  width: 405px;
+  font-size: 20px;
+  font-family: caveat;
+  margin-bottom: 35px;
+}
+.vr .recipe .imageHolder {
+  width: 468px;
+  height: 420px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.vr .recipe .imageHolder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.vr .ingre {
+  margin-left: 25px;
+  margin-bottom: 60px;
+}
+.vr .ingre h1 {
+  font-size: 25px;
+  font-family: lato_black;
+  margin-bottom: 35px;
+}
+.vr .ingre p {
+  margin-bottom: -3px;
+  font-size: 20px;
+  font-family: caveat;
+}
+.vr .edit {
+  margin-left: 25px;
+  width: 127px;
+}
+.vr .edit a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #FFD972;
+  color: black;
+  border-radius: 20px;
+}
+
+.yourRecipe {
+  background-image: linear-gradient(rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../images/recipe-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  height: 100%;
+}
+.yourRecipe .words {
+  position: relative;
+  top: 25%;
+  left: 11%;
+  width: 300px;
+}
+.yourRecipe .words h2 {
+  font-size: 25px;
+  font-family: caveat_bold;
+}
+.yourRecipe .wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  height: 575px;
+  display: flex;
+}
+.yourRecipe .buttons {
+  width: 300px;
+  height: 42px;
+  margin-left: 170px;
+  margin-top: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.yourRecipe .buttons a {
+  text-decoration: none;
+  color: black;
+  width: 125px;
+  padding: 10px;
+  background-color: #FFD972;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 20px;
+  font-family: caveat;
+}
+.yourRecipe .browseHolder {
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.yourRecipe .food {
+  width: 600px;
+  min-height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.yourRecipe .food .vw {
+  width: 200px;
+  height: 42px;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.yourRecipe .food .vw a {
+  text-decoration: none;
+  color: black;
+  width: 125px;
+  padding: 10px;
+  background-color: #FFD972;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 20px;
+  font-family: caveat;
+}
+.yourRecipe .food .imageHolder {
+  width: 300px;
+  height: 263px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.yourRecipe .food .imageHolder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.yourRecipe .titleDesc {
+  width: 225px;
+  height: 263px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: -1px;
+}
+.yourRecipe .titleDesc .time {
+  width: 85px;
+  height: 25px;
+  margin-left: 70px;
+  margin-bottom: 16px;
+}
+.yourRecipe .titleDesc .time p {
+  font-size: 10px;
+  font-family: Lato;
+  margin-top: -22px;
+}
+.yourRecipe .titleDesc .time img {
+  width: 23px;
+  height: 25px;
+}
+.yourRecipe .titleDesc h4 {
+  margin-top: 40px;
+  font-size: 15px;
+  font-family: lato_black;
+  border-bottom: solid black 2px;
+  width: 130px;
+  margin-left: 47px;
+}
+.yourRecipe .titleDesc p {
+  width: 145px;
+  font-size: 10px;
+  font-family: Lato;
+  margin-left: 47px;
+}
+
+footer {
+  width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  margin-left: 120px;
+}
+footer p {
+  margin-top: 18px;
+  font-family: lato_italic;
+  font-size: 15px;
+}
+footer .footer-links {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .footer-links a {
+  text-decoration: none;
+  color: black;
+  font-family: lato_italic;
+  font-size: 15px;
+}
+footer .media {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .media img {
+  height: 19px;
+  width: 19px;
+}
+
+/*# sourceMappingURL=styles.css.map */

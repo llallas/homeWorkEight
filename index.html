@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWorkEight</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="nav-holder">
+      <div class="logo">
+        <img src="images/logo (1).svg" alt="" />
+        <a href="#home"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#browse">Browse</a></li>
+          <li><a href="#create">Create Recipe</a></li>
+          <li class="login"><a href="#login">Login</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" class="hamburger-icon">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#browse">Browse</a></li>
+          <li><a href="#create">Create Recipe</a></li>
+          <li class="login"><a href="#login">Login</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="app"></div>
+
+    <footer>
+      <p>Copyright © 2019 The Jungle Cook</p>
+      <div class="footer-links">
+        <a href="#login">Login</a>
+        <a href="#">Recipes by Category</a>
+        <a href="#">Privacy and Copyright</a>
+        <a href="#create">Create Recipe</a>
+        <a href="#yourRecipe">Your Recipes</a>
+      </div>
+      <div class="media">
+      <img src="images/facebook.svg" alt="" />
+      <img src="images/instagram.svg" alt="" />
+    </div>
+    </footer>
+    
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script type="module" src="app/app.js"></script>
+    <script type="module" src="model/model.js"></script>
+  </body>
+</html>

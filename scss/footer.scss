@@ -1,0 +1,41 @@
+footer{
+    width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    margin-left: 120px;
+
+    p{
+        margin-top: 18px;
+        font-family: lato_italic;
+        font-size: 15px;
+    }
+    .footer-links{
+        width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: lato_italic;
+            font-size: 15px;
+
+        }
+    }
+.media{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    img{
+        height: 19px;
+        width: 19px;
+    }
+}
+}
