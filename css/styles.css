@@ -704,11 +704,11 @@ footer .media img {
 
 @font-face {
   font-family: caveat_bold;
-  src: url(/fonts/Caveat-Bold.ttf);
+  src: url(../fonts/Caveat-Bold.ttf);
 }
 @font-face {
   font-family: caveat;
-  src: url(/fonts/Caveat-Regular.ttf);
+  src: url(../fonts/Caveat-Regular.ttf);
 }
 @font-face {
   font-family: gill_light;
