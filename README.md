@@ -21,9 +21,9 @@ Have your project on Github with a Full README file description of your project.
 Deploy this to Firebase and to Github as well. Remember to add to your Readme file and put the link to Firebase link inside the Readme file. 
 
 ## Description
-This website is a user-friendly platform dedicated to providing a rich collection of recipes. Users can explore a wide variety of culinary delights, ranging from appetizers to main courses and desserts. The site allows registered users to save their favorite recipes for quick access in the future (Couldn't get any of it to work)
+This website is a user-friendly platform dedicated to providing a rich collection of recipes. Users can explore a wide variety of culinary delights, ranging from appetizers to main courses and desserts. The site allows registered users to save their favorite recipes for quick access in the future (Couldn't get any of it to work) (Had problem with injetion when using fire base)
  
 
 
 ## web 4 link
-https://in-info-web4.informatics.iupui.edu/~eliarria/homeWorkEight/ 
+https://in-info-web4.informatics.iupui.edu/~eliarria/homeWorkEight/
